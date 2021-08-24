@@ -39,7 +39,7 @@ public class connectedComponents {
         }
 
         ArrayList<ArrayList<Integer>> comps = new ArrayList<>() ;
-        //write your code here...
+        //------------------------------------------------------------------
 
         boolean[] visited = new boolean[vtces] ;
         for(int i = 0; i < vtces; i++){

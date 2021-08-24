@@ -45,7 +45,7 @@ public class hasPath {
         int src = Integer.parseInt(br.readLine()) ;
         int dest = Integer.parseInt(br.readLine()) ;
 
-        //write your code here...
+        //-------------------------------------------------------------------
         boolean[] visited = new boolean[vtces] ;
         boolean path = hasPath(graph, src, dest, visited) ;
 
