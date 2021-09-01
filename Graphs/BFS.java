@@ -51,7 +51,6 @@ public class BFS {
         //rm*wa*...
         while(queue.size() > 0){
             Pair rem = queue.removeFirst() ;  //remove...
-
             if(visited[rem.v] == true){ 
                 continue ;
             }
