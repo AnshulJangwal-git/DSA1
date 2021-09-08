@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Implementations",
         "DynamicProgramming",
-        "Implementations"
+        "LinkedList"
     ]
 }
