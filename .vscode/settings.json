@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "LinkedList",
         "Implementations",
         "DynamicProgramming",
-        "LinkedList"
+        ".vscode/Sorting_Algorithms"
     ]
 }
