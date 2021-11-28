@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
         "Trees/GenericTree",
+        "Trees/BinaryTree",
         "Sorting_Algorithms",
         "LinkedList",
         "Implementations",
         "DynamicProgramming",
-        "Trees/BinaryTree"
+        "practice"
     ]
 }
