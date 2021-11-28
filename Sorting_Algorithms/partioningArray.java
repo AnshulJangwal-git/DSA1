@@ -4,6 +4,10 @@ import java.util.* ;
 public class partioningArray {
 
     public static void partition(int arr[], int pivot){
+        //0 to j - 1 -> arr[i] > pivot
+        //j to i - 1 -> arr[i] <= pivot
+        //i to end -> unknowns
+    
         int i = 0 ; int j = 0 ;
         while(i < arr.length){
             if(arr[i] > pivot){
@@ -15,7 +19,7 @@ public class partioningArray {
             }
         }
     }
-    
+
     public static void swap(int[] arr, int i, int j){
         System.out.println("Swapping " + arr[i] + " and " + arr[j]) ;
         int temp = arr[i] ;
