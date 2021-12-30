@@ -42,9 +42,10 @@ public class implementation {
             int v2 = sc.nextInt() ;
             int wt = sc.nextInt() ;
             
-            graph[v1].add(new Edge(v1,v2, wt)) ;
-            graph[v2].add(new Edge(v2, v1, wt)) ;
+           graph[v1].add(new Edge(v1, v2, wt)) ;
+           graph[v2].add(new Edge(v2, v1, wt)) ;
         }
+        
         display(graph) ;
         
     }  
