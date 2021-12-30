@@ -5,40 +5,47 @@ import java.io.* ;
 public class implementation {
     static class Edge{
         int src ;
-        int dest ;
+        int nbr ;
         int wt ;
-
-        Edge(int src, int dest, int wt){
+        
+        Edge(int src, int nbr, int wt){
             this.src = src ;
-            this.dest = dest ;
-            this.wt = this.wt ;
+            this.nbr = nbr ;
+            this.wt = wt ;
         }
     }
 
-
-
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in)) ;
-        int vtces = Integer.parseInt(br.readLine()) ;
-
-        ArrayList<Edge>[] graph = new ArrayList[vtces] ;
+    static void display(ArrayList<Edge> graph[]){
         for(int i = 0; i < graph.length; i++){
-            graph[i] = new ArrayList<>() ;
+            System.out.print(i + "->" + " ") ;
+            
+            for(Edge e : graph[i]){
+                System.out.print(e.nbr + "  ") ;
+            }
+            System.out.println() ;
         }
+    }
 
-        int edges = Integer.parseInt(br.readLine()) ;
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in) ;
+        
+        int vtces = sc.nextInt() ;
+        int edges = sc.nextInt() ;
+        
+        ArrayList<Edge> graph[] = new ArrayList[vtces] ;
+        for(int i = 0; i < vtces; i++){
+            graph[i] = new ArrayList<Edge>() ;
+        }
+        
         for(int i = 0; i < edges; i++){
-            String parts[] = br.readLine().split(" ") ;
-            int v1 = Integer.parseInt(parts[0]) ;
-            int v2 = Integer.parseInt(parts[1]) ;
-            int wt = Integer.parseInt(parts[2]) ;
-
-            graph[v1].add(new Edge(v1, v2, wt)) ;
+            int v1 = sc.nextInt() ;
+            int v2 = sc.nextInt() ;
+            int wt = sc.nextInt() ;
+            
+            graph[v1].add(new Edge(v1,v2, wt)) ;
             graph[v2].add(new Edge(v2, v1, wt)) ;
         }
-
-        int src = Integer.parseInt(br.readLine()) ;
-        int des = Integer.parseInt(br.readLine()) ;
-
-    }    
+        display(graph) ;
+        
+    }  
 }
