@@ -1,0 +1,8 @@
+//PriorityQueues
+//PriorityQueues gives more Priority to smaller values. And for reversing this Priority we need to pass Collections.reverseOrder()
+//in constructor of the PriorityQueue.
+
+Main functions
+pq.remove()
+pq.peek()
+pq.add() 
