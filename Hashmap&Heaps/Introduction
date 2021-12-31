@@ -1,0 +1,10 @@
+HashMap...
+-Stores key value pairs
+-Main Functions
+map.put()
+map.get()
+map.containsKey()
+map.keySet()
+map.remove()
+map.size()
+map.clear()
